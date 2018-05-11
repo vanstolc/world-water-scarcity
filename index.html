@@ -83,7 +83,7 @@
         return colors[id];
     }
 
-    // 7. Set style function that sets fill color.md property equal to cell tower density
+    // 7. Set style function that sets fill color.md property equal to water scarcity
     function style(feature) {
         return {
             fillColor: setColor(feature.properties.tdefm),
@@ -95,7 +95,7 @@
         };
     }
 
-    // 8. Add county polygons
+    // 8. Add country polygons
     // create world variable, and assign null to it.
     var world = null;
     world = L.geoJson.ajax("assets/wriwaterscarcity-wbpop-clipped.geojson", {
